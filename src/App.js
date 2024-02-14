@@ -4,7 +4,7 @@ import Benefits from './Sections/Benefits';
 import Timer from './Sections/Timer';
 import About from './Sections/About';
 import CTA from './Sections/CTA';
-import Modal from "react-modal";
+import {Modal} from 'react-modal';
 import Form from './Sections/Form';
 import { useState, useEffect } from 'react';
 
