@@ -1,0 +1,263 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  height: 100vh;
+}
+
+/* ===================================
+   ===============Hero================ */
+
+.hero-container {
+  color: white;
+  background: linear-gradient(to right, darkgreen, rgb(122, 201, 122), darkgreen);
+  background-size: cover;
+  filter: brightness(85%);
+  height: 100%;
+  width: 100%;
+  border-bottom: 5px solid rgb(159, 194, 106);
+}
+
+.hero-contents {
+  margin: 5% 20%;
+  padding: 0 5%;
+  font-size: 3rem;
+  border: 5px solid #000000;
+  border-radius: 20px;
+  transition: all 0.5s;
+  font-family: "Protest Strike", sans-serif;
+
+  &:hover {
+    box-shadow: 5px 5px 60px 5px grey;
+    transform: scale(1.05);
+    -webkit-backdrop-filter: blur(1px);
+    backdrop-filter: blur(5px);
+  }
+}
+
+
+/* ===================================
+   ===============About=============== */
+
+.about-container {
+  margin: 3% 15%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 5rem;
+  align-items: center;
+  line-height: 25px;
+  padding: 5%;
+  background-color: whitesmoke;
+  border-radius: 20px;
+  border: 2px solid #b8b1a4;
+  font-family: "poppins", sans-serif;
+}
+
+.about-container>h1 {
+  font-size: 3rem;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.about-inside {
+  display: flex;
+  gap: 15%;
+}
+
+
+.about-image {
+  align-self: center;
+}
+
+/* ===================================
+   ===============Benefits============ */
+
+.features-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(to right, darkgreen, rgb(122, 201, 122), darkgreen);
+  border-top: 5px solid rgb(159, 194, 106);
+}
+
+.row {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+}
+
+.item {
+  margin: 5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+}
+
+/* ===========================================
+=======================Timer=============== */
+
+.timer-container {
+  padding-top: 5%;
+  text-align: center;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.timer {
+  font-size: 10rem;
+  font-weight: 900;
+  color: rgb(107, 109, 24);
+}
+
+.time-text {
+  font-size: 6rem;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 300;
+}
+
+.clock {
+  animation: clock 4s linear infinite;
+}
+
+
+@keyframes clock {
+  0% {
+    transform: rotate(0);
+  }
+
+  50% {
+    transform: rotate(180deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/* ================================================
+===============CTA============================== */
+
+.CTA-container {
+  display: flex;
+  padding: 1% 10%;
+  padding-bottom: 1%;
+  justify-content: space-evenly;
+  background: linear-gradient(to right,darkgreen,rgb(59, 167, 82),darkgreen);
+  color: white;
+  border-top: 2px solid rgb(247, 237, 237);
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-weight: 100;
+  font-size: 2.5rem;
+}
+
+.register-btn {
+  height: fit-content;
+  padding: 1rem;
+  margin-top: 1%;
+  font-size: 2.5rem;
+  border-radius: 10px;
+  border: none;
+  transition: all 0.20s;
+  cursor: pointer;
+
+  &:hover {
+    background-color: midnightblue;
+    color: white;
+  }
+}
+
+.time {
+  color: rgb(20, 86, 207);
+  font-size: 2.5rem;
+
+  &:hover {
+    color: red;
+  }
+}
+
+
+form {
+  display: flex;
+  flex-direction: column;
+  padding: 10%;
+  gap: 20px;
+}
+
+input {
+  padding: 4%;
+  border-radius: 10px;
+  border: none;
+}
+
+.form-register {
+  padding: 4%;
+  border-radius: 10px;
+  border: none;
+  transition: all 0.2s;
+  cursor: pointer;
+
+  &:hover {
+    background-color: midnightblue;
+    color: white;
+  }
+}
+
+
+/* =======================================
+==============Responsive=============== */
+
+@media only screen and  (max-width:500px) {
+  .hero-container{
+    width: 100vh;
+    height: 100vh;
+  }
+
+  .hero-contents{
+    margin: 0;
+    border: none;
+    font-size: 3rem;
+  }
+
+  .about-container{
+    width: 80vh;
+  }
+  .about-container>h1{
+    font-size: 2.5srem;
+  }
+
+  .about-inside{
+    width: 100%;
+    flex-direction: column;
+    font-size: 1.5rem;
+    line-height: 35px;
+  }
+
+  .stock-image{
+    height: 150px;
+  }
+
+  .features-container{
+    width: 100vh;
+  }
+
+  .item{
+    font-size: 1.5rem;
+  }
+
+  .timer-container{
+    width: 100vh;
+  }
+
+  .time-text{
+    font-size: 4.5rem;
+  }
+  .CTA-container{
+    width: 90.7vh;
+  }
+
+  
+
+}

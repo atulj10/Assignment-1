@@ -1,0 +1,10 @@
+*{
+    scrollbar-width: none;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #d1b94fe5;
+    font-family: Arial, Helvetica, sans-serif;
+}
